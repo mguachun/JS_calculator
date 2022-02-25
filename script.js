@@ -23,6 +23,22 @@ operationButtons.forEach(button => {
     })
 })
 
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDislpay()
+})
+
+allClearButton.addEventListener('click', button => {
+    calculator.clear()
+    calculator.updateDislpay()
+})
+
+
+deleteButton.addEventListener('click', button => {
+    calculator.clear()
+    calculator.updateDislpay
+})
+
 class Calculator {
     // where to place display prev and current text el
     constructor(previousOperandTextElement, currentOperandTextElement){
