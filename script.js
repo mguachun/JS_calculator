@@ -24,6 +24,9 @@ class Calculator {
     }
 
     chooseOperation(operation){
+        this.operation = operation
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
 
     }
 
@@ -33,6 +36,7 @@ class Calculator {
 
     updateDislpay(){
     this.currentOperandTextElement.innerText = this.currentOperand
+    this.previousOperandTextElement.innerText = this.previousOperand
     }
 }
 
